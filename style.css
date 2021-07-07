@@ -1,0 +1,126 @@
+html{
+    font-size:100%;
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.header a{
+    
+    color: white;
+    font-size: 50px;
+    font-family:  Helvetica;
+    text-decoration: none;
+}
+
+.header a:hover{
+    color: tomato;
+    cursor: pointer;
+}
+
+.btn a{
+    float:right;
+    margin-left: 30px;
+    font-size: 30px;
+    color: white;
+    border:2px solid white;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn a:hover{
+    color: tomato;
+    cursor: pointer;
+    border:2px solid tomato;
+    border-radius: 10px;
+}
+
+.stopWatch{
+    margin:0 30px;
+    display: block;
+}
+
+.clk{
+    margin:0 30px;
+    display: none;
+}
+
+.clock{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 8vw;
+}
+
+.buttons{
+    position: absolute;
+    top:70%; 
+    left: 50%; 
+    display: flex;
+    display: none;
+    overflow: hidden;
+}
+/* .buttons .upper .lower{
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+
+ul{
+    margin:3rem 0 ;
+}
+
+ul li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin:1.5rem 0;
+   font-family: 'Courier New';
+   font-size: 2vw;
+}
+
+
+
+
+@media only screen and (max-width:1130px){
+    body{
+        background-color: violet;
+    }
+}
+
+@media only screen and (max-width:750px){
+    body{
+        background-color: yellow;
+    }
+
+}
+
+@media only screen and (max-width:520px){
+    body{
+        background-color: aqua;
+        overflow: hidden;
+    }
+    .buttons{
+        position: absolute;
+        top:60%; 
+        left: 0%;
+    /* display: flex; */
+    
+    }
+    .btn{
+        margin: 1rem 0;
+    }
+}

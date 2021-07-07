@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="./style.css">
+    <title>Digital Clock</title>
+</head>
+<body onload="showTime()">
+   
+        <div class="header"  onclick="hide()">
+            <a href="#">Clock</a>
+        </div>
+        <div class="btn stopWatch" id="stopWatch" onclick="show()">
+            <a href="#">StopWatch</a>
+        </div>
+        <div class="btn clk" id="clock" onclick="hide()">
+            <a href="#">clock</a>
+        </div>
+    
+    
+    
+    <div class="clock" id="digitalClock"></div>
+
+    <div class="buttons" id="showbtn">
+        
+            <div class="btn start" onclick="start()"> <a href="#">Start</a> </div>
+            <div class="btn pause" onclick="pause()"> <a href="#">Pause</a></div>
+            <div class="btn reset" onclick="reset()"> <a href="#">Reset</a></div>
+        
+            
+        
+            <div class="btn reset" onclick="lap()"> <a href="#">Lap</a></div>
+            <div class="btn reset" onclick="resetlaps()"> <a href="#">ResetLaps</a></div>
+        
+            
+    
+                
+    
+                
+                    
+    
+        
+        
+    </div>
+
+    <ul id="laps"></ul>
+    <script src="./script.js"></script>
+</body>
+</html>
